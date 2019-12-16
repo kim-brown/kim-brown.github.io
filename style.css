@@ -1,0 +1,164 @@
+#gradient {
+    height: 800px;
+    background: linear-gradient(to bottom, #003366 0%, #33cccc 100%)
+}
+
+#gradient2 {
+    height: 1500px;
+    background: linear-gradient(to bottom, #003366 0%, #33cccc 100%)
+}
+
+.inline-photos {
+  width: 500px;
+  height: 300px;
+  padding-left: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body {
+  background-color: #003366;
+  font-family: Georgia;
+  line-height: 23px;
+}
+
+a {
+  color: darkblue;
+}
+
+.home-text {
+  color: white;
+  margin: 100px;
+  font-size: 20px;
+  line-height: 35px;
+  margin: 100px;
+}
+
+.home-text a {
+  color: white;
+  font-size: 20px;
+  margin-right: 40px;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.home-text a:hover {
+  background-color: grey;
+}
+
+.body-text {
+  margin: 50px;
+  color: black;
+}
+
+.partition {
+  margin: 50px auto;
+  height: 800px;
+  width: 100%;
+  display: grid;
+  /*grid-template-columns: repeat(3, 1fr);*/
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.grid-item {
+  background-color: white;
+  border: 3px solid black;
+  width: 450px;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+.grid-item a img:hover {
+    opacity: .4;
+}
+
+.resume-left {
+  grid-column: 1;
+  grid-row: 1;
+  width: 10%;
+}
+
+.resume {
+  grid-column: 2;
+  grid-row: 1;
+  width: 80%;
+  background-color: white;
+}
+
+.resume-right {
+  grid-column: 3;
+  grid-row: 1;
+  width: 10%;
+}
+
+#resume-heading {
+  text-align: center;
+}
+
+#resume-heading a {
+  text-decoration: none;
+}
+
+.topnav {
+  margin-top: 10px;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+
+.back-button {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.back-button a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.topnav a:hover {
+  background-color: grey;
+}
+
+.back-button a:hover {
+  background-color: #248282;
+}
+
+@media screen and (max-width: 1000px) {
+  .resume {
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .resume {
+    width: 70%;
+  }
+
+  .resume-left {
+    width: 0%;
+  }
+
+  .resume-right {
+    width: 0%;
+  }
+}
