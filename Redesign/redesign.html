@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="redesign.css">
+</head>
+<body>
+  <div class="topnav" id="myTopnav">
+    <a>Africa</a>
+    <a>Asia</a>
+    <a>Europe</a>
+    <a>North America</a>
+    <a>South America</a>
+    <a>Oceania</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+<div class="row">
+  <div class="column-top">
+    <div class="craigslist">
+      craigslist
+    </div>
+  </div>
+  <div class="column-top">
+    <p style="color: #663796;">
+      <i class="fa fa-map-marker"></i> Providence, RI
+      <br>
+      <input style="font-size: 16px;"
+      type="text" class="searchbar" placeholder="  Search for your city">
+    </p>
+  </div>
+
+  <div class="column-top" align="center">
+    <p style="color:black"><img class="blueno" src="Blueno.jpg"><br>
+      <strong>Blueno Bear</strong><br>
+      bbear1300<br><br>
+      <button type="button" class="account-button" style="background-color: white; color: black;">Switch Account</button>
+      <br>
+      <button type="button" class="account-button">Go Home</button>
+    </p>
+  </div>
+</div>
+<br>
+<br>
+
+<div class="row">
+  <div class="left-main">
+        <form required>
+          <p style="margin-left:20px">Listing title:</p>
+            <input type="text"
+            name="title"
+            style="height:40px; font-size:18px; width: 79.2%; margin-left: 20px;
+            top: -90px;"
+            placeholder=' e.g. "Selling Kent Retro 700c City Bicycle"'
+            required>
+          <br>
+          <br>
+          <br>
+          <p style="margin-left: 20px">Listing category:</p>
+            <select name="category"
+             required>
+              <option value=""  disabled selected>Choose a category</option>
+              <option value="jobOff">Job offer</option>
+              <option value="gig">Gig offer</option>
+              <option value="jobWan">Job wanted</option>
+              <option value="housOff">Housing offer</option>
+              <option value="housWan">Housing wanted</option>
+              <option value="saleOwn">For sale by owner</option>
+              <option value="saleDeal">For sale by dealer</option>
+              <option value="wantOwn">Wanted by owner</option>
+              <option value="wantDeal">Wanted by dealer</option>
+              <option value="servOff">Service offered</option>
+              <option value="event">Event/class</option>
+            </select>
+          <p style="margin-left: 20px">Listing sub-category:</p>
+            <select name="subcategory" required>
+              <option value="" disabled selected>Choose a sub-category</option>
+              <option value="">Art/film</option>
+              <option value="">Literary</option>
+              <option value="">Tech</option>
+              <option value="">Career</option>
+              <option value="">Fitness/health</option>
+              <option value="">Music</option>
+              <option value="">Food/drink</option>
+              <option value="">Outdoor</option>
+              <option value="">Sale</option>
+            </select>
+      <br>
+      <br>
+      <br>
+    </form>
+  </div>
+
+  <div class="right-main">
+    <p style="color: black">Uploaded Images:<p>
+    <progress value="22" max="100"></progress><br>
+    <img class="pictures" src="bicycle.jpeg">
+    <img class="pictures" src="side-view.jpg" style="filter:opacity(34%)">
+  </div>
+</div>
+
+<div class="row">
+  <div class="left-bottom">
+    Add image: <button type="button" class="uploadbutton">Upload</button>
+  </div>
+
+  <div class="center-bottom">
+    <button type="button" class="previewbutton">Preview</button>
+    <input type="submit" value="Next" class="nextbutton">
+  </div>
+
+  <div class="right-bottom">
+    <p><a style="color: blue; text-decoration: underline">Listing Guidelines</a>
+      | <a style="color: blue; text-decoration: underline">Prohibited Items</a> </p>
+  </div>
+</div>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+</body>
+</html>
