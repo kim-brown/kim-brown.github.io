@@ -148,6 +148,26 @@ a {
   background-color: #248282;
 }
 
+.download-resume {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px;
+}
+
+.download-resume a {
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.download-resume a:hover{
+  background-color: lightgrey;
+}
+
 @media screen and (max-width: 1000px) {
   .resume {
   }
