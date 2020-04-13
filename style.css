@@ -19,6 +19,7 @@
 .work-photos {
   width: 450px;
   height:300px;
+  border: 3px solid black;
 }
 
 body {
@@ -67,8 +68,7 @@ a {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 100px;
 }
 
 .grid-item {
@@ -168,6 +168,40 @@ a {
   background-color: lightgrey;
 }
 
+.blog-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+}
+
+.blog-post {
+  background-color: white;
+  margin-top: 30px;
+}
+
+.blog-post h2 {
+  margin-left: 20px;
+  padding-top: 10px;
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.dashboard {
+  margin-top: 20px;
+  width: 600px;
+  height: 400px;
+}
+
 @media screen and (max-width: 1000px) {
   .resume {
   }
@@ -185,4 +219,10 @@ a {
   .resume-right {
     width: 0%;
   }
+}
+
+.preview {
+  width: 450px;
+  height: 300px;
+  border: 3px solid black;
 }
