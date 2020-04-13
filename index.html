@@ -1,39 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="style.css">
-  <title>Kim Brown Portfolio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon"
-      type="image/png"
-      href="favicon.png">
-</head>
-<body>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Kim Brown Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon"
+        type="image/png"
+        href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+      }
+    </script>
+  </head>
+  <body>
 
-<div id="gradient">
-  <div class="topnav" id="myTopnav">
-    <a href="">Home</a>
-    <a href="resume.html">Resume</a>
-    <a href="work.html">UI/UX</a>
-    <a href="backend.html">Backend</a>
-  </div>
+    <div id="gradient">
+      <div class="topnav" id="myTopnav">
+        <a href="">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="work.html">UI/UX</a>
+        <a href="backend.html">Backend</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
-  <p class="home-text">
-    <img src="img/edinburgh.jpeg" style="width: 350px; height: 500px; margin-right: 50px" align="left">
-    Hi, I'm Kim. I'm a Full Stack Developer working toward
-    a Bachelor of Computer Science. When not learning new programming languages
-    or technologies, you may find me baking or playing <i>The Sims</i>.
-    <br /> <br />
-    <br /> <br />
-  </p>
-
-  <p class="home-text" style="text-align:right">
-    <a href = "mailto: kimberly_brown1@brown.edu" target="_blank">Email</a>
-    <a href="https://www.linkedin.com/in/kimberly-brown-17a242141/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/kimberly-brown" target="_blank">Github</a>
-  </p>
-</div>
-
-</body>
+      <div class="grid-container-home">
+        <div class="grid-item-home">
+          <p style="text-align: center">
+            <img src="img/edinburgh.jpeg" style="width: 350px; height: 500px;
+            margin-top: 20px">
+          </p>
+        </div>
+        <div class="grid-item-home">
+          <p class="home-text">
+            Hi, I'm Kim. I'm a Full Stack Developer working toward
+            a Bachelor of Computer Science. When not learning new programming languages
+            or technologies, you may find me baking or playing <i>The Sims</i>.
+          </p>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h3 style="color:white; margin-left:20px"> Get in touch </h3>
+          <p class="home-text">
+            <a href = "mailto: kimberly_brown1@brown.edu" target="_blank">
+              <img src="img/gmail-icon.svg" class="social-media-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/kimberly-brown-17a242141/" target="_blank">
+              <img src="img/linkedin_icon.png" class="social-media-icon" style="width: 55px; height: 55px;">
+            </a>
+            <a href="https://github.com/kimberly-brown" target="_blank">
+              <img src="img/github_icon.png" class="social-media-icon">
+            </a>
+          </p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+  </body>
 </html>
