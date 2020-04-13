@@ -1,10 +1,12 @@
 #gradient {
     height: 100%;
+    width: 100%;
     background: linear-gradient(to bottom, #003366 0%, #33cccc 100%)
 }
 
 #gradient2 {
     height: 100%;
+    width: 100%;
     background: linear-gradient(to bottom, #003366 0%, #33cccc 100%)
 }
 
