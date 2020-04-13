@@ -11,15 +11,14 @@
 }
 
 .inline-photos {
-  width: 500px;
-  height: 300px;
-  padding-left: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 80%;
+  height: 80%;
+  padding: 5%;
+  margin-left: 5%;
 }
 
 .work-photos {
-  width: 450px;
+  width: 400px;
   height:300px;
   border: 3px solid black;
 }
@@ -82,11 +81,19 @@ a {
 }
 
 @media (min-width: 700px) {
-  .grid-container-home { grid-template-columns: repeat(2, 1fr); }
+  .grid-container-home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-item {
+    width: 450px;
+  }
+  .work-photos {
+    width: 450px;
+  }
 }
 
 .grid-item {
-  width: 450px;
+  width: 400px;
   font-size: 30px;
   text-align: center;
   color: white;
@@ -99,23 +106,11 @@ a {
     opacity: .4;
 }
 
-.resume-left {
-  grid-column: 1;
-  grid-row: 1;
-  width: 10%;
-}
-
-.resume {
-  grid-column: 2;
-  grid-row: 1;
+.resume img {
   width: 80%;
-  background-color: white;
-}
-
-.resume-right {
-  grid-column: 3;
-  grid-row: 1;
-  width: 10%;
+  height: 90%;
+  text-align: center;
+  margin-left: 10%;
 }
 
 #resume-heading {
@@ -236,25 +231,6 @@ p {
 
 .center {
   text-align: center;
-}
-
-@media screen and (max-width: 1000px) {
-  .resume {
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .resume {
-    width: 70%;
-  }
-
-  .resume-left {
-    width: 0%;
-  }
-
-  .resume-right {
-    width: 0%;
-  }
 }
 
 .preview {
