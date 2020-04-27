@@ -73,6 +73,15 @@ a {
   margin-left: 10px;
 }
 
+.grid-container-resume {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-item-resume {
+
+}
+
 @media (min-width: 970px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
@@ -84,6 +93,11 @@ a {
   .grid-container-home {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .grid-container-resume {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
   .grid-item {
     width: 450px;
   }
