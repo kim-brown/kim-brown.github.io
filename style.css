@@ -1,28 +1,4 @@
-#gradient {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to bottom, #003366 0%, #33cccc 100%)
-}
-
-#gradient2 {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to bottom, #003366 0%, #33cccc 100%)
-}
-
-.inline-photos {
-  width: 60%;
-  height: 60%;
-  padding: 5%;
-  margin-left: 5%;
-}
-
-.work-photos {
-  width: 400px;
-  height:300px;
-  border: 3px solid black;
-}
-
+/* base --------------------------------------------------------------------- */
 body {
   background-color: #003366;
   font-family: Georgia;
@@ -33,108 +9,25 @@ a {
   color: darkblue;
 }
 
-.home-text {
-  color: white;
-  font-size: 20px;
-  line-height: 35px;
-  margin: 20px;
-  text-align: left;
-}
-
-.home-text a {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-  line-height: 35px;
-}
-
-.body-text {
-  margin: 40px;
-  color: black;
-}
-
-.partition {
-  margin: 50px auto;
-  height: 800px;
-  width: 100%;
-  display: grid;
-}
-
-.grid-container {
-  padding-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr;
+h1 {
   margin-left: 20px;
+  line-height: 1.1em;
 }
 
-.grid-container-home {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-left: 10px;
+/* general ------------------------------------------------------------------ */
+#gradient {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #003366 0%, #33cccc 100%)
 }
 
-.grid-container-resume {
-  display: grid;
-  grid-template-columns: 1fr;
+.inline-photos {
+  width: 60%;
+  height: 60%;
+  padding: 5%;
 }
 
-.grid-item-resume {
-
-}
-
-@media (min-width: 970px) {
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 50px;
-  }
-}
-
-@media (min-width: 700px) {
-  .grid-container-home {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .grid-container-resume {
-    grid-template-columns: 1fr 2fr 1fr;
-  }
-
-  .grid-item {
-    width: 450px;
-  }
-  .work-photos {
-    width: 450px;
-  }
-}
-
-.grid-item {
-  width: 400px;
-  font-size: 30px;
-  text-align: center;
-  color: white;
-}
-
-.grid-item-home {
-}
-
-.grid-item a img:hover {
-    opacity: .4;
-}
-
-.resume img {
-  width: 80%;
-  height: 90%;
-  text-align: center;
-  margin-left: 10%;
-}
-
-#resume-heading {
-  text-align: center;
-}
-
-#resume-heading a {
-  text-decoration: none;
-}
-
+/* topnav ------------------------------------------------------------------- */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -177,27 +70,98 @@ a {
   padding-top: 20px;
 }
 
-.back-button {
-  margin-left: 50px;
-  margin-top: 30px;
-}
-
-.back-button a {
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
 .topnav a:hover {
   background-color: grey;
 }
 
-.back-button a:hover {
-  background-color: #248282;
+/* home page ---------------------------------------------------------------- */
+.home-text {
+  color: white;
+  font-size: 20px;
+  line-height: 35px;
+  margin: 20px;
+  text-align: left;
+}
+
+.home-text a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 35px;
+}
+
+.body-text {
+  margin: 40px;
+  color: black;
+}
+
+.social-media-icon {
+  width: 50px;
+  height: 50px;
+  padding-right: 20px;
+}
+
+.social-media-icon:hover {
+  opacity: 40%;
+}
+
+.grid-container-home {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 10px;
+}
+
+@media (min-width: 700px) {
+  .grid-container-home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* project selection grids -------------------------------------------------- */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 970px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 5%;
+  color: white;
+}
+
+.grid-item a img:hover {
+    opacity: .4;
+}
+
+.grid-item img {
+  width: 450px;
+  height: 300px;
+  border: 3px solid black;
+}
+
+/* resume page -------------------------------------------------------------- */
+
+.resume img {
+  width: 80%;
+  height: 90%;
+  text-align: center;
+  margin-left: 10%;
+}
+
+#resume-heading {
+  text-align: center;
+}
+
+#resume-heading a {
+  text-decoration: none;
 }
 
 .download-resume {
@@ -220,45 +184,40 @@ a {
   background-color: lightgrey;
 }
 
-.blog-wrapper {
+.grid-container-resume {
   display: grid;
-  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-columns: 1fr;
 }
 
-.blog-post {
-  background-color: white;
+@media (min-width: 700px) {
+  .grid-container-resume {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+/* individual project page -------------------------------------------------- */
+
+.back-button {
+  margin-left: 50px;
   margin-top: 30px;
 }
 
-.blog-post h2 {
-  margin-left: 20px;
-  padding-top: 10px;
+.back-button a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
-h1 {
-  margin-left: 20px;
-  line-height: 1.1em;
+.back-button a:hover {
+  background-color: #248282;
 }
 
-p {
-}
-
-.center {
-  text-align: center;
-}
-
-.preview {
-  width: 450px;
-  height: 300px;
-  border: 3px solid black;
-}
-
-.social-media-icon {
-  width: 50px;
-  height: 50px;
-  padding-right: 20px;
-}
-
-.social-media-icon:hover {
-  opacity: 40%;
+@media (min-width: 700px) {
+  .work-photos {
+    width: 450px;
+  }
 }
