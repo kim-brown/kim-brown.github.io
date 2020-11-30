@@ -1,6 +1,5 @@
 /* base --------------------------------------------------------------------- */
 body {
-  background-color: #003366;
   font-family: Georgia;
   line-height: 23px;
 }
@@ -18,7 +17,6 @@ h1 {
 #gradient {
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom, #003366 0%, #33cccc 100%)
 }
 
 .inline-photos {
@@ -28,19 +26,21 @@ h1 {
 }
 
 /* topnav ------------------------------------------------------------------- */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+@media screen and (max-width: 700px) {
+  .topnav a {display: none;}
   .topnav a.icon {
-    float: right;
     display: block;
+    position: absolute;
+    right: 40%;
+    top: 0;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
-    right: 0;
+    right: 40%;
     top: 0;
   }
   .topnav.responsive a {
@@ -54,6 +54,8 @@ h1 {
   overflow: hidden;
   padding-top: 15px;
   padding-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
 }
 
 .topnav .icon {
@@ -62,7 +64,8 @@ h1 {
 
 .topnav a {
   text-decoration: none;
-  color: white;
+  text-transform: uppercase;
+  color: black;
   font-size: 20px;
   padding-left: 30px;
   padding-right: 30px;
@@ -71,20 +74,21 @@ h1 {
 }
 
 .topnav a:hover {
-  background-color: grey;
+  /* background-color: lightgrey; */
+  text-decoration: underline;
+  text-decoration-color: #72a1a1;
+  text-decoration-thickness: 25%;
 }
 
 /* home page ---------------------------------------------------------------- */
 .home-text {
-  color: white;
   font-size: 20px;
   line-height: 35px;
-  margin: 20px;
-  text-align: left;
+  margin-right: 80px;
+  margin-left: 80px;
 }
 
 .home-text a {
-  color: white;
   font-size: 20px;
   text-decoration: none;
   line-height: 35px;
@@ -98,7 +102,7 @@ h1 {
 .social-media-icon {
   width: 50px;
   height: 50px;
-  padding-right: 20px;
+  padding-right: 5%;
 }
 
 .social-media-icon:hover {
@@ -108,7 +112,6 @@ h1 {
 .grid-container-home {
   display: grid;
   grid-template-columns: 1fr;
-  margin-left: 10px;
 }
 
 @media (min-width: 700px) {
@@ -131,10 +134,9 @@ h1 {
 }
 
 .grid-item {
-  font-size: 30px;
+  font-size: 25px;
+  margin: 10%;
   text-align: center;
-  padding-top: 5%;
-  color: white;
 }
 
 .grid-item a img:hover {
@@ -142,9 +144,9 @@ h1 {
 }
 
 .grid-item img {
-  width: 450px;
-  height: 300px;
-  border: 3px solid black;
+  width: 100%;
+  height: 80%;
+  border: 1px solid black;
 }
 
 /* resume page -------------------------------------------------------------- */
@@ -154,6 +156,7 @@ h1 {
   height: 90%;
   text-align: center;
   margin-left: 10%;
+  border: 1px solid black;
 }
 
 #resume-heading {
@@ -165,23 +168,18 @@ h1 {
 }
 
 .download-resume {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  border: 1px;
+    background-color: white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+      transition-duration: 0.4s;
+      border: 1px solid black;
 }
 
-.download-resume a {
-  color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.download-resume a:hover{
-  background-color: lightgrey;
+.download-resume:hover {
+    background-color: #72a1a1;
+    color: white;
 }
 
 .grid-container-resume {
@@ -197,6 +195,22 @@ h1 {
 
 /* individual project page -------------------------------------------------- */
 
+.project-page {
+}
+
+.project-page img {
+    border: 1px solid black;
+    margin: 20px;
+    padding: 0px;
+}
+
+.project-page a {
+    text-decoration: underline;
+    color: #72a1a1;
+    text-decoration-color: #72a1a1;
+    text-decoration-thickness: 20%;
+}
+
 .back-button {
   margin-left: 50px;
   margin-top: 30px;
@@ -205,15 +219,19 @@ h1 {
 .back-button a {
   color: black;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 20px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
   padding-top: 20px;
+  font-weight: bold;
 }
 
 .back-button a:hover {
-  background-color: #248282;
+    text-decoration: underline;
+    text-decoration-color: #72a1a1;
+    text-decoration-thickness: 25%;
 }
 
 @media (min-width: 700px) {
